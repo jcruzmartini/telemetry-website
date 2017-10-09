@@ -1,0 +1,43 @@
+* {
+	font-family: Open Sans;
+}
+
+#btn-acceder {
+	border: 1px solid #111;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	position: absolute;
+	z-index: 1000;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#btn-info {
+	border: 1px solid #111;
+	border-top-left-radius: 5px;
+	color: #fff;
+	border-bottom-left-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	background: rgba(0,0,0,0.6);
+	padding: 0px;
+	position: absolute;
+	height: 20%;
+	width: 2%;
+	text-align: center;
+	z-index: 1000;
+	top: 40%;
+	right: 0px;
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: middle;
+	color: #EEE;
+}
+
+#btn-info3 {
+	padding: 10px;
+}

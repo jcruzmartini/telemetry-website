@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<title>Techner - Damos Valor a Su Decision</title>
+		<meta name="description" content="Techner - Damos Valor a Su Decision. Soluciones Tecnologicas." />
+		<meta name="keywords" content="techner, agro, tecnologia, tau, tau01, meteorologia, estacion meteorologica, tau, estacion telemetrica, tau aplicada" />
+		<meta name="author" content="carlosfontana" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="carlosfontana" />
+		<meta name="Reply-to" content="carlosfontana@techner.com.ar" />
+		<meta name="generator" content="HTML" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5, IE=8, IE=9, IE=10" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link id="base-style" href="css/style.css" rel="stylesheet" />
+
+		<!--/.fluid-container-->
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/excanvas.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.stack.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
+		<script type="text/javascript" src="js/jquery.chosen.min.js"></script>
+		<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cleditor.min.js"></script>
+		<script type="text/javascript" src="js/jquery.noty.js"></script>
+		<script type="text/javascript" src="js/jquery.elfinder.min.js"></script>
+		<script type="text/javascript" src="js/jquery.raty.min.js"></script>
+		<script type="text/javascript" src="js/jquery.iphone.toggle.js"></script>
+		<script type="text/javascript" src="js/jquery.uploadify-3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.gritter.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded.js"></script>
+		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+		<script type="text/javascript" src="js/jquery.knob.modified.js"></script>
+		<script type="text/javascript" src="js/jquery.sparkline.min.js"></script>
+		<script type="text/javascript" src="js/bootbox.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/counter.js"></script>
+		<script type="text/javascript" src="js/retina.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/toastr.js"></script>
+		<script type="text/javascript" src="js/table2CSV.js"></script>
+		<script type="text/javascript" src="js/highstock.js"></script>
+		<script type="text/javascript" src="js/exporting.js"></script>
+		<script type="text/javascript" src="js/highcharts-more.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/utils/common.js"></script>
+		<script type="text/javascript" src="js/utils/responsive.js"></script>
+		<script type="text/javascript" src="js/utils/auth.js"></script>
+		<script type="text/javascript" src="js/utils/cookie.js"></script>
+		<script type="text/javascript" src="js/views/measures.js"></script>
+		<script type="text/javascript" src="js/views/stations.js"></script>
+		<script type="text/javascript" src="js/views/graphics.js"></script>
+		<script type="text/javascript" src="js/views/alerts.js"></script>
+		<script type="text/javascript" src="js/views/services.js"></script>
+		<script type="text/javascript" src="js/views/map.js"></script>
+		<script type="text/javascript" src="js/views/profile.js"></script>
+		<script type="text/javascript" src="js/views/controlPanel.js"></script>
+		<script type="text/javascript" src="js/views/evolution.js"></script>
+		<script type="text/javascript" src="js/views/decisions.js"></script>
+		<script type="text/javascript" src="js/views/notifications.js"></script>
+		<script type="text/javascript" src="js/views/forecast.js"></script>
+		<script type="text/javascript" src="js/views/historical.js"></script>
+		<script type="text/javascript" src="js/views/economics.js"></script>
+		<script type="text/javascript" src="js/views/adminConsole.js"></script>
+		<script type="text/javascript" src="js/tau.js"></script>
+		<script type="text/javascript" src="js/jquery.switchButton.js"></script>
+
+		<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link id="ie-style" href="css/ie.css" rel="stylesheet" />
+		<![endif]-->
+		<!--[if IE 9]>
+		<link id="ie9style" href="css/ie9.css" rel="stylesheet" />
+		<![endif]-->
+		<!-- start: Favicon -->
+		<link rel="shortcut icon" href="img/favicon.bmp" />
+		<!-- end: Favicon -->
+
+
+	</head>
+	<body>
+		<!-- start: Header -->
+		<div class="navbar" style='margin-bottom:5px;'>
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href='#' style='z-index:-1;'>
+						<img src="./img/techner/logo-techner.png" id='logo-techner' onclick="window.open('http://www.techner.com.ar/contacto/');" height="20px" alt="Logo" />
+					</a>
+					<!-- start: Header Menu -->
+					<div class="nav-no-collapse header-nav">
+						<ul class="nav pull-right">
+							<li class="dropdown hidden-phone" id='notifications-link'>
+								<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="halflings-icon white warning-sign"></i>
+								</a>
+								<ul class="dropdown-menu messages">
+									<li id="notifications-header-div"></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="halflings-icon white flag"></i>
+									<span class="header-option" id="station">Marcos Juarez, C&oacute;rdoba.</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" class="services-link">
+											<i class="halflings-icon white list-alt"></i> Configuraci&oacute;n
+										</a>
+									</li>
+									<li>
+										<a id='change_station'>
+											<i class="halflings-icon white random"></i> Cambiar de Estaci&oacute;n
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- start: User Dropdown -->
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="halflings-icon white user"></i>
+									<span class="header-option" id="user"></span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="profile-link">
+											<i class="halflings-icon white list-alt"></i> Cuenta
+										</a>
+									</li>
+									<li>
+										<a href="#" class="logout">
+											<i class="halflings-icon white off"></i> Salir
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- end: User Dropdown -->
+						</ul>
+					</div>
+					<!-- end: Header Menu -->
+				</div>
+			</div>
+			<div style='position:relative;text-align:right;width:95%;margin:2px;font-size:75%;' id='header-resume'>
+				<span style='padding:5px; z-index:1001; '>
+					<img src="./img/sensors/status-ok.png" id='status-img' width="15px" style="width:15px;">
+					<strong>Estado</strong>
+					<span id="status-span">En L&iacute;nea</span>
+				</span>
+				<span style='padding:5px; z-index:1001; '>
+					<img src="./img/sensors/map.png" width="15px" style="width:15px;">
+					<strong>Ubicaci&oacute;n</strong>
+					<a href="#" id='showmap'><span id="location-span"></span></a>
+				</span>
+				<span style='padding:5px; z-index:1001; '>
+					<img src="./img/sensors/amanecer.png" width="15px" style="width:15px;">
+					<strong>Amanecer</strong>
+					<span id="sunrise-span">00:00</span> hs
+				</span>
+				<span style='padding:5px; z-index:1001; '>
+					<img src="./img/sensors/ocaso.png" width="15px" style="width:15px;">
+					<strong>Ocaso</strong>
+					<span id="sunset-span">00:00</span> hs
+				</span>
+				<div id="google-map" style="position:absolute; top:0; left:0; border-radius: 3px; z-index:1000; background-color:rgba(59,59,65,0.95);padding:3px 3px 0px 3px;opacity:0.9;"></div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<!-- start: Main Menu -->
+				<div id="sidebar-left" class="span1">
+					<div class="sidebar-nav">
+						<ul class="nav nav-tabs nav-stacked main-menu">
+							<li id="li-resume">
+								<a href="#" class="resume-link">
+									<i class="fa-icon-home"></i>
+									<span>Tablero de Control</span>
+								</a>
+							</li>
+							<li id="li-evolution">
+								<a href="#" class="evolution-link">
+									<i class="fa-icon-bar-chart"></i>
+									<span> Evoluci&oacute;n de <br />las Variables</span>
+								</a>
+							</li>
+							<li id="li-decisions" class="hideonphone">
+								<a href="#" class="decisions-link">
+									<i class="fa-icon-book"></i>
+									<span> Toma de <br />Decisiones</span>
+								</a>
+							</li>
+							<li id="li-notificaciones" class="hideonphone">
+								<a href="#" class="notifications-link">
+									<i class="fa-icon-envelope"></i>
+
+									<span class="hidden-sm"> Alertas y Notificaciones</span>
+								</a>
+							</li>
+							<li id="li-forecast" class="hideonphone">
+								<a href="#" class="forecast-link">
+									<i class="fa-icon-cloud"></i>
+									<span> Pron&oacute;stico del Tiempo</span>
+								</a>
+							</li>
+							<li id="li-historical" class="hideonphone">
+								<a href="#" class="historical-link">
+									<i class="fa-icon-hdd"></i>
+									<span> Informaci&oacute;n<br />Hist&oacute;rica</span>
+								</a>
+							</li>
+							<li id="li-economics" class="hideonphone">
+								<a href="#" class="economics-link">
+									<i class="fa-icon-money"></i>
+									<span> Variables<br />Econ&oacute;micas</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end: Main Menu -->
+				<div id="loading-window" class="modal hide fade" role="dialog" data-backdrop="static" style='visibility:hidden;'>
+					<div class="modal-header">
+							<center><img src="img/tau-logo.png" style="height:35px;vertical-align:top;" alt="Logo" /> </center>
+					</div>
+					<div class="modal-body">
+						<div style="text-align:center;">
+							<span>Procesando la informaci&oacute;n.&nbsp;</span><span id="loading-percentage">0%</span><br/>
+							<img src="./img/loading.gif" style="vertical-align: top;" alt="Cargando" />
+						</div>
+					</div>
+				</div>
+				<div id="content-element"></div>
+				<div id="content-admin-configuration-div" class="content-page"></div>
+				<div id="content-admin-console-div" class="content-page"></div>
+				<div id="content-historical-div" class="content-page"></div>
+				<div id="content-alarms-div" class="content-page"></div>
+				<div id="content-evolution-div" class="content-page"></div>
+				<div id="content-forecast-div" class="content-page"></div>
+				<div id="content-decisions-div" class="content-page"></div>
+				<div id="content-services-div" class="content-page"></div>
+				<div id="content-notifications-div" class="content-page"></div>
+				<div id="content-profile-div" class="content-page"></div>
+				<div id="content-resume-div" class="content-page"></div>
+				<div id="content-economics-div" class="content-page"></div>
+			</div>
+			<!--/#content.span10-->
+		</div>
+		<!--/fluid-row-->
+		<div class="clearfix"></div>
+		<!-- Modal -->
+		<div id="loginform" class="modal hide fade" role="dialog" data-backdrop="static">
+			<div class="modal-header">
+				<h2>
+					<img src="img/tau-logo.png" style="height:35px;vertical-align:top;" alt="Logo" /> Acceso al Sistema
+				</h2>
+			</div>
+			<div class="modal-body">
+				<p>Para utilizar gratuitamente nuestro servicio debe completar los siguientes datos:</p>
+				<div>
+					<span style='display: inline-block;width:22%'><strong>Nombre y Apellido:</strong></span>
+					<input class="input focused demo-input" id="loginform-nombre" type="text" />
+				</div>
+				<div>
+					<span style='display: inline-block;width:22%'><strong>Telefono:</strong></span>
+					<input class="input focused demo-input" id="loginform-telefono" type="text" />
+				</div>
+				<div>
+					<span style='display: inline-block;width:22%'><strong>Ciudad:</strong></span>
+					<input class="input focused demo-input" id="loginform-ciudad" type="text" />
+				</div>
+				<div>
+					<span style='display: inline-block;width:22%'><strong>Correo Electr&oacute;nico:</strong></span>
+					<input class="input focused demo-input" id="loginform-email" type="text" />
+				</div>
+				<div id='loginform-verif-div' width='100%'>
+						<span style='display: inline-block;width:22%'><strong>C&oacute;d. Verificaci&oacute;n:</strong></span>
+						<input class="input focused" id="loginform-verif" type="text">
+						<span id="loginform-verif-div" style="width:100%" class="label label-info">
+							<strong>Revise su Correo (<span id='loginform-verif-msj'></span>)</strong>&nbsp;Hemos enviado un C&oacute;digo de Verificaci&oacute;n.
+						</span>
+				</div>
+				<span id="loginform-error" style="width:100%" class="label label-important">Por favor, revise los datos ingresados</span>
+			</div>
+			<div class="modal-footer">
+                <button id="loginform-guardar" class="btn btn-success">
+					<i class="halflings-icon white ok"></i>Ingresar
+				</button>
+			</div>
+		</div>
+		<div id="login-email-form" class="modal hide fade" role="dialog" data-backdrop="static">
+			<div class="modal-header">
+				<h1><img src="img/tau-logo.png" style="height:35px;vertical-align:top;" alt="Logo" /> Acceso</h1>
+			</div>
+			<div class="modal-body">
+				<p id='login-email-msg'>Por favor, ingrese el E-Mail y la Contrase&ntilde;a:</p>
+				<div>
+					<span style='display: inline-block;;width:22%'><strong>E-Mail:</strong></span>
+					<input class="input focused login-input" id="login-email-form-email" type="text" />
+				</div>
+				<div>
+					<span style='display: inline-block;width:22%' id='login-password-form-email-label'><strong>Contrase&ntilde;a:</strong></span>
+					<input class="input focused login-input" type="password" id="login-password-form-email" />
+				</div>
+				<!--<div style='text-align:center;'><a href='#' id='login-olvide-password'>Olvid&eacute; mi Contrase&ntilde;a</a></div>-->
+
+				<div id="login-email-form-error" style="width:100%" class="label label-important">Por favor, revise los datos ingresados</div>
+			</div>
+			<div class="modal-footer">
+				<a id="login-email-form-demo" href='#' style='position: absolute; left:15px;'><strong>Demo Gratuito</strong></a>
+                <button id="login-email-form-ingresar" class="btn btn-success">
+					<i class="halflings-icon white user"></i>&nbsp;Ingresar
+				</button>
+			</div>
+		</div>
+		<div id="change-station-div" class="modal hide fade" role="dialog" data-backdrop="static">
+			<div class="modal-header">
+				<h1><img src="img/tau-logo.png" style="height:35px;vertical-align:top;"/> &nbsp;Seleccionar otra Estaci&oacute;n</h1>
+			</div>
+			<div class="modal-body" style='width:100%;'>
+					<label class="control-label"  style='width:100%;'>Por favor, elija la estaci&oacute;n que desee monitorear:</label>
+					<div class="controls" style='right:20px;width:100%;'>
+						<div id='change-station-options'>
+						</div>
+					</div>
+			</div>
+
+			<div class="modal-footer">
+                <button id="change-station-seleccionar" class="btn btn-success">
+					<i class="halflings-icon white ok-sign"></i>&nbsp;Aceptar
+				</button>
+                <button id="change-station-cancelar" class="btn btn-success">
+					<i class="halflings-icon white remove-sign"></i>&nbsp;Cancelar
+				</button>
+			</div>
+		</div>
+		<div id="modal-error" class="modal hide fade" role="dialog" data-backdrop="static">
+			<div class="modal-header">
+				<h1><img src="img/tau-logo.png" style="height:35px;vertical-align:top;" alt="Logo" /> Error en el Sistema</h1>
+			</div>
+			<div class="modal-body">
+				<span>
+					<strong>Ha ocurrido un problema!</strong> alguna funcionalidad puede no funcionar correctamente.<br />
+					Si el mismo persiste, cont&aacute;ctese con
+					<a href="mailto:soporteclientes@techner.com.ar">
+						<strong>soporteclientes@techner.com.ar</strong>
+					</a>
+					<br />
+					<!--Se actualizar&aacute; en <span id='modal-error-seconds'>60</span> segundos.<br />-->
+				</span>
+			</div>
+			<div class="modal-footer">
+                <button id="modal-error-actualizar" class="btn btn-success">
+					<i class="halflings-icon white ok"></i>&nbsp;Aceptar
+				</button>
+			</div>
+		</div>
+		<noscript>
+			<div class="alert alert-block span11">
+				<h4 class="alert-heading">Advertencia!</h4>
+				<p>
+					Tiene que tener <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+					habilitado para utilizar este Sitio.
+				</p>
+			</div>
+		</noscript>
+	</body>
+</html>

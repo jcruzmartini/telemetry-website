@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<title>Telemetr&iacute;a aplicada al Agro - Techner</title>
+		<meta name="description" content="Telemetr&iacute;a aplicada al Agro, optimizando la toma de decisiones" />
+		<meta name="keywords" content="techner, agro, tecnologia, tau, tau01, meteorologia, estacion meteorologica, tau, estacion telemetrica, tau aplicada, telemetria, precision" />
+		<meta name="author" content="carlosfontana" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="carlosfontana" />
+		<meta name="Reply-to" content="carlosfontana@techner.com.ar" />
+		<meta name="generator" content="HTML" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5, IE=8, IE=9, IE=10" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <link rel="stylesheet" type="text/css" href="/css/style2.css" />
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="/js/modernizr.custom.04022.js"></script> 
+			<style>.ie-note-1{display:block;}</style>
+		<![endif]-->
+		<!--[if lt IE 10]><style>.ie-note-2{display:block;}</style><![endif]-->	
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<style type="text/css">
+			#effect { width: 80%; height: 40%; padding: 0.4em; margin-left: auto; margin-right: auto; margin-top: 0px;}
+		</style>
+		<link rel="shortcut icon" href="http://tau01.com/img/favicon.bmp" />
+		<script>
+			$(document).ready(function() {
+				$("#visualizar").click(function() {
+					$.fancybox.open([
+						{href : '/images/imgserv01.jpg',	title : 'Vista superior de TAU.01'}, 
+						{href : '/images/imgserv02.jpg',	title : 'Vista lateral de TAU.01'}, 
+						{href : '/images/imgserv03.jpg',	title : 'Vista posterior de TAU.01'}, 
+						{href : '/images/imgserv04.jpg',	title : 'Vista del refugio'}, 
+						{href : '/images/imgserv05.jpg',	title : 'Display indicador'}, 
+						{href : '/images/imgserv06.jpg',	title : 'Vista de la tapa'}
+					], {
+						helpers : {
+							thumbs : {
+								width: 75,
+								height: 50
+							}
+						}
+					});
+				});
+				$(window).resize(function(){
+					var ww = $(window).width();
+					var wh = $(window).height();
+					console.log(ww);
+					if (ww < 930) {
+						$('#station-div').hide();
+						$('#text').css('width','100%');
+					} else {
+						$('#station-div').show();
+						$('#text').css('width','72%');
+						
+					}
+					if(wh < 610){
+						$('#footer').hide();
+						$('.upperreturn').show();
+					}else {
+						$('#footer').show();
+						$('.upperreturn').hide();
+					}
+					if (ww < 330){
+						$('.upperreturn').hide();
+					}
+				});
+				$(window).trigger('resize');
+			});
+		</script>
+	</head>
+    <body>
+		<div align="center"><img src="/images/bg.jpg" class="bg"></div>
+
+		<div>
+			<a href="/" class="transition">
+				<img src="/images/title.png" class="logo" alt="Techner" />
+			</a>
+			<span class='upperreturn'>
+					<a href="/" class="transition">regresar</a>
+			</span>			
+			<div class="content">
+				<div id="effect" class="window">
+					<div class="window_head"><h1>Servicios</h1></div>
+					<table>
+						<tr>
+							<td style="width:72%;" id='text'>
+								<p>
+									El principal servicio de <span style="font-style:italic;color:#fff;">TECHNER</span>
+									consiste en una soluci&oacute;n integral de telemetr&iacute;a, denominada 
+									<span style="font-style:italic;color:#fff;">TAU</span>, que permite monitorear en
+									tiempo real a trav&eacute;s de una plataforma interactiva, el estado y evoluci&oacute;n de
+									las variables influyentes en el &eacute;xito de la producci&oacute;n rural.
+									<br />
+									<br />
+									El mismo consiste de un equipo electr&oacute;nico emplazado en el lugar, el cual reporta
+									datos constantemente a nuestros servidores, donde son almacenados y analizados con
+									el fin de convertir los mismos en informaci&oacute;n &uacute;til y concreta.
+									<br />
+									<br />
+									En base a la misma, se podr&aacute; identificar momentos claves para realizar determinadas
+									actividades y anticiparse a posibles riesgos.
+									<br />
+									<br />
+									A continuaci&oacute;n puede acceder a nuestro sistema <span style="font-style:italic;">TAU</span>
+									para visualizar los datos monitoreados de la Estaci&oacute;n de Telemetr&iacute;a instalada en 
+									<a href="http://goo.gl/maps/rgyKO" style="color:#fff;" target="_blank">Marcos Juarez</a>,
+									provincia de C&oacute;rdoba.
+									<div style="text-align:center;">
+										<a href="/tau01" title="Acceda al Sistema TAU.01" target="_blank">
+											<img src="/images/sistema.jpg" alt="Sistema TAU.01" width="25%" class="service_img" />
+										</a>
+										<a href="/images/tau01-folleto-techner.jpg" title="Descargue el Folleto de TAU.01" target="_blank">
+											<img src="/images/folleto.jpg" alt="Folleto TAU.01" width="25%" class="service_img" />
+										</a>
+										<a title="Visualice imagenes de TAU.01" id="visualizar" href="javascript:;">
+											<img src="/images/imagenes.jpg" alt="Imagenes TAU.01" width="25%" class="service_img" />
+										</a>
+									</div>
+								</p>
+							</td>
+							<td>
+								<div style="text-align:center;" id='station-div'>
+									<div class="ao-item">
+										<div class="ao-preview">
+											<input type="checkbox" id="ao-toggle" class="ao-toggle" name="ao-toggle" />
+											<img src="/images/station2.png" alt="image02" width="65%" />
+											<div class="ao-annotations">
+												<span>Anem&oacute;metro</span>
+												<span>Pluvi&oacute;metro</span>
+												<span>Radiaci&oacute;n</span>
+												<span>Panel Solar</span>
+												<span>Refugio</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id='footer'>
+				<span class="reference">
+					<a href="" class="transition">Techner @Argentina</a>
+					<a href="http://tau01.com/" class="transition">Servicio TAU 01</a>
+				</span>
+				<span class="return">
+					<a href="/" class="transition">regresar</a>
+				</span>
+				<span class="social">
+					<a>S&iacute;guenos en:&nbsp;</a>
+					<a href="http://www.linkedin.com/company/2796779?trk=tyah" target="_blank">
+						<img src="/images/socialmedia-l.png" alt="Techner Linkedin" />
+					</a>
+					<a href="http://www.facebook.com/pages/Techner-Argentina/379912165440176" target="_blank">
+						<img src="/images/socialmedia-f.png" alt="Techner Facebook" />
+					</a>
+					<a href="https://twitter.com/@technerAR" target="_blank">
+						<img src="/images/socialmedia-t.png" alt="Techner Twitter" />
+					</a>
+					<a href="http://gplus.to/TechnerArgentina" target="_blank">
+						<img src="/images/socialmedia-gp.png" alt="Techner Google+" />
+					</a>
+				</span>
+			</div>
+		</div>
+    </body>
+</html>

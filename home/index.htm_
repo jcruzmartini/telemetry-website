@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<title>Techner - Damos Valor a Su Decisi&oacute;n</title>
+		<meta name="description" content="Techner. Damos Valor a Su Decisi&oacute;n. Servicios de Telemetr&iacute;a y Tecnolog&iacute;a Aplicada. TAU.01, Telemetr&iacute;a Aplicada. Estaciones Meteorol&oacute;gicas" />
+		<meta name="keywords" content="techner, agro, tecnologia, tau, tau01, meteorologia, estacion meteorologica, tau, estacion telemetrica, tau aplicada" />
+		<meta name="author" content="carlosfontana" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="carlosfontana" />
+		<meta name="Reply-to" content="carlosfontana@techner.com.ar" />
+		<meta name="generator" content="HTML" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5, IE=8, IE=9, IE=10" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<link rel="shortcut icon" href="http://tau01.com/img/favicon.bmp" />
+	</head>
+	<body>
+		<div>
+			<h1>
+				<a href="/" class="transition">
+					<img src="/images/title.png" class="logo" alt="Techner" width="24%" />
+				</a>
+			</h1>
+			<img src="/images/station4.png" alt="estaci&oacute;n de telemetr&iacute;a" style="position:absolute; bottom:0px; right:0px;" width="30%" />
+			<a href="http://www.tau01.com/" class="transition">
+				<img src="images/tau-entrar-izq.png" alt="estaci&oacute;n de telemetr&iacute;a" style="position:absolute; top:0px; right:15px;" width="20%" />
+			</a>
+			<a href="http://www.agroactiva.com" class="transition" target="_blank">
+				<img src="images/agroactiva.png" alt="agroactiva" style="position:absolute; bottom:40px; left:0px;" />
+			</a>
+			<div class="content">
+				<ul id="sdt_menu" class="sdt_menu" style="position:absolute; top: 40%; width: 75%;">
+					<li>
+						<a href="/techner/" class="transition">
+							<img src="/images/1.jpg" alt="Techner Empresa" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link">Empresa</span>
+								<span class="sdt_descr">Techner @Argentina</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/servicios/" class="transition">
+							<img src="/images/2.jpg" alt="Servicios TAU.01" />
+							<span class="sdt_active"></span>
+								<span class="sdt_wrap">
+								<span class="sdt_link">Servicios</span>
+								<span class="sdt_descr">TAU.01</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/caracteristicas-competitiva/" class="transition">
+							<img src="/images/3.jpg" alt="Caracteristicas Competitivas" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link">Competitividad</span>
+								<span class="sdt_descr">Nuestra Distinci&oacute;n</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/beneficios/" class="transition">
+							<img src="/images/4.jpg" alt="Beneficios TAU.01" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link">Beneficios</span>
+								<span class="sdt_descr">Toma de Decisiones</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/informacion/" class="transition">
+							<img src="/images/5.jpg" alt="Monitoreo de Variables" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link">Informaci&oacute;n</span>
+								<span class="sdt_descr">Monitoreo de Variables</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/contacto/" class="transition">
+							<img src="/images/6.jpg" alt="Cont&aacute;ctese con Techner" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link">Contacto</span>
+								<span class="sdt_descr">Cont&aacute;ctese con Techner</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<span class="reference">
+					<a href="" class="transition">Techner @Argentina</a>
+					<a href="http://www.tau01.com/" class="transition">Servicio TAU 01</a>
+				</span>
+				<span class="social">
+					<a>S&iacute;guenos en:&nbsp;</a>
+					<a href="http://www.linkedin.com/company/2796779?trk=tyah" target="_blank">
+						<img src="/images/socialmedia-l.png" alt="Techner Linkedin" />
+					</a>
+					<a href="http://www.facebook.com/pages/Techner-Argentina/379912165440176" target="_blank">
+						<img src="/images/socialmedia-f.png" alt="Techner Facebook" />
+					</a>
+					<a href="https://twitter.com/@technerAR" target="_blank">
+						<img src="/images/socialmedia-t.png" alt="Techner Twitter" />
+					</a>
+					<a href="http://gplus.to/TechnerArgentina" target="_blank">
+						<img src="/images/socialmedia-gp.png" alt="Techner Google+" />
+					</a>
+				</span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+			    $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+					.stop(true)
+					.animate({
+						'width':'170px',
+						'height':'170px',
+						'left':'0px'
+					},400,'easeOutBack')
+					.andSelf()
+					.find('.sdt_wrap')
+					.stop(true)
+					.animate({'top':'140px'},500,'easeOutBack')
+					.andSelf()
+					.find('.sdt_active')
+					.stop(true)
+					.animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					$elem.find('.sdt_active')
+						.stop(true)
+						.animate({'height':'0px'},300)
+						.andSelf().find('img')
+						.stop(true)
+						.animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						.andSelf()
+						.find('.sdt_wrap')
+						.stop(true)
+						.animate({'top':'25px'},500);
+				});
+			});	
+		</script>
+	</body>
+</html>

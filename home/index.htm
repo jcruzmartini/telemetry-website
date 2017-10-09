@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<title>Techner - Damos Valor a Su Decisi&oacute;n</title>
+		<meta name="description" content="Techner. Damos Valor a Su Decisi&oacute;n. Servicios de Telemetr&iacute;a y Tecnolog&iacute;a Aplicada. TAU.01, Telemetr&iacute;a Aplicada. Estaciones Meteorol&oacute;gicas" />
+		<meta name="keywords" content="techner, agro, tecnologia, tau, tau01, meteorologia, estacion meteorologica, tau, estacion telemetrica, tau aplicada" />
+		<meta name="author" content="carlosfontana" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="carlosfontana" />
+		<meta name="Reply-to" content="carlosfontana@techner.com.ar" />
+		<meta name="generator" content="HTML" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5, IE=8, IE=9, IE=10" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="/css/style-home.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<script type="text/javascript" src="/js/modernizr.custom.97074.js"></script>
+		<link rel="shortcut icon" href="http://tau01.com/img/favicon.bmp" />
+		<script type="text/javascript">
+		
+			$(function() {
+				$('#tooltip-content').hide();
+				$('#sdt_menu > li').bind('mouseenter',function(){
+					var ww = $(window).width();
+					if (ww < 790) {return};
+					var $elem = $(this);
+					$elem.find('img')
+					.stop(true)
+					.animate({
+						'width':'170px',
+						'height':'170px',
+						'left':'0px'
+					},400,'easeOutBack')
+					.andSelf()
+					.find('.sdt_wrap')
+					.stop(true)
+					.animate({'top':'140px'},500,'easeOutBack')
+					.andSelf()
+					.find('.sdt_active')
+					.stop(true)
+					.animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					$elem.find('.sdt_active')
+						.stop(true)
+						.animate({'height':'0px'},300)
+						.andSelf().find('img')
+						.stop(true)
+						.animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						.andSelf()
+						.find('.sdt_wrap')
+						.stop(true)
+						.animate({'top':'25px'},500);
+				});
+			
+				
+				$(window).resize(function(){
+					var ww = $(window).width();
+					$('#logo').css('left', (ww-300) + 'px');
+					$('#station-img').hide();
+					$('#agroactiva-img').hide();
+					$('#tau01-img').hide();
+					if (ww < 790) {
+						$('#sdt_menu').css('top','25%'); 
+						$('#tau01-img').hide();
+						$('#footer').hide();
+						$('#agroactiva-img').hide();
+						$('#station-img').hide();
+					} else if (ww<906){
+						$('#agroactiva-img').hide();
+						setTimeout(function() {
+							$('#station-img').fadeIn();
+							$('#tau01-img').fadeIn();
+						}, 2500);					
+					} else {
+						$('#sdt_menu').css('top','40%');
+						setTimeout(function() {
+							$('#station-img').fadeIn();
+							$('#agroactiva-img').fadeIn();
+							$('#tau01-img').fadeIn();
+						}, 2500);					
+						$('#footer').show();
+					}
+					$('#logo').animate({left:'5px'}, 2500);
+					$('#techner-tooltip-2').attr('title',$('#tooltip-empresa').html());
+					$('#servicio-tooltip-2').attr('title',$('#tooltip-servicio').html());
+					$('#competitivas-tooltip-2').attr('title',$('#tooltip-caracteristicas').html());
+					$('#informacion-tooltip-2').attr('title',$('#tooltip-informacion').html());
+					$('#beneficios-tooltip-2').attr('title',$('#tooltip-beneficios').html());
+						bootbox.dialog({
+						  message: "I am a custom dialog",
+						  title: "Custom title",
+						  buttons: {
+							success: {
+							  label: "Success!",
+							  className: "btn-success",
+							  callback: function() {
+								Example.show("great success");
+							  }
+							},
+							danger: {
+							  label: "Danger!",
+							  className: "btn-danger",
+							  callback: function() {
+								Example.show("uh oh, look out!");
+							  }
+							},
+							main: {
+							  label: "Click ME!",
+							  className: "btn-primary",
+							  callback: function() {
+								Example.show("Primary button");
+							  }
+							}
+						  }
+						});
+					
+				});
+				$(window).trigger('resize');
+			});	
+		</script>
+	</head>
+	<body>
+		<div align="center"><img src="/images/bg.jpg" class="bg"></div>
+		<div>
+			<a href="/" class="transition" title='Techner Argentina'>
+				<img src="/images/title.png" id='logo' style='position:absolute;'alt="Techner"/>
+			</a>
+			<img src="/images/station4.png" id="station-img" alt="estaci&oacute;n de telemetr&iacute;a" style="position:absolute; bottom:0px; right:0px;width:50%;max-width:300px;" />
+			<a href="http://www.tau01.com/" class="transition" id="tau01-img" title='Acceda a nuestro sistema'>
+				<img src="images/tau-entrar-izq.png" alt="estaci&oacute;n de telemetr&iacute;a" style="position:absolute; right:1%;" />
+			</a>
+			<a href="http://www.agroactiva.com" id="agroactiva-img" class="transition" target="_blank">
+				<img src="images/agroactiva.png" alt="agroactiva" style="position:absolute; bottom:2%; left:0%; width:50%;max-width:300px;" />
+			</a>
+			<div class="content">
+				<h1 style=' color: rgba(40, 40, 0, 0.1);'>Bienvenido a Techner Argentina</h1>
+				<ul id="sdt_menu" class="sdt_menu" style="position:absolute; top: 30%; width: 75%;">
+					<li>
+						<a href="/techner/" class="transition" id='techner-tooltip-2'>
+							<img src="/images/1.jpg" alt="Techner Empresa" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Empresa</h2></span>
+								<span class="sdt_descr"><h3>Techner @Argentina</h3></span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/servicios/" class="transition" id='servicio-tooltip-2'>
+							<img src="/images/2.jpg" alt="Servicios TAU.01" />
+							<span class="sdt_active"></span>
+								<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Servicios</h2></span>
+								<span class="sdt_descr"><h3>TAU.01</h3></span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/caracteristicas-competitiva/" id='competitivas-tooltip-2' class="transition">
+							<img src="/images/3.jpg" alt="Caracteristicas Competitivas" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Competitividad</h3></span>
+								<span class="sdt_descr"><h3>Nuestra Distinci&oacute;n</h3></span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/beneficios/" class="transition" id='beneficios-tooltip-2'>
+							<img src="/images/4.jpg" alt="Beneficios TAU.01" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Beneficios</h2></span>
+								<span class="sdt_descr"><h3>Toma de Decisiones</h3></span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/informacion/" class="transition" id='informacion-tooltip-2'>
+							<img src="/images/5.jpg" alt="Monitoreo de Variables" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Informaci&oacute;n</h2></span>
+								<span class="sdt_descr"><h3>Monitoreo de Variables</h3></span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="/contacto/" class="transition">
+							<img src="/images/6.jpg" alt="Cont&aacute;ctese con Techner" />
+							<span class="sdt_active"></span>
+							<span class="sdt_wrap">
+								<span class="sdt_link"><h2>Contacto</h2></span>
+								<span class="sdt_descr"><h3>Cont&aacute;ctese con Techner</h3></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="footer">
+				<span class="reference">
+					<a href="" class="transition">Techner @Argentina</a>
+					<a href="http://www.tau01.com/" class="transition">Servicio TAU 01</a>
+				</span>
+				<span class="social">
+					<a>S&iacute;guenos en:&nbsp;</a>
+					<a href="http://www.linkedin.com/company/2796779?trk=tyah" target="_blank">
+						<img src="/images/socialmedia-l.png" alt="Techner Linkedin" />
+					</a>
+					<a href="http://www.facebook.com/pages/Techner-Argentina/379912165440176" target="_blank">
+						<img src="/images/socialmedia-f.png" alt="Techner Facebook" />
+					</a>
+					<a href="https://twitter.com/@technerAR" target="_blank">
+						<img src="/images/socialmedia-t.png" alt="Techner Twitter" />
+					</a>
+					<a href="http://gplus.to/TechnerArgentina" target="_blank">
+						<img src="/images/socialmedia-gp.png" alt="Techner Google+" />
+					</a>
+				</span>
+			</div>
+			<div id='tooltip-content'>
+				<p id='tooltip-empresa'>TECHNER es una empresa joven y versatíl dedicada al diseño, desarrollo e implantación de soluciones tecnológicas innovadoras. TECHNER tiene como objetivo primordial brindar servicios tecnologicos con excelencia para facilitar la toma de decisiones a sus clientes, es por ello que los productos y servicios son diseñados considerando las necesidades de los mismos.</p>
+				<p id='tooltip-servicio'>El principal servicio de TECHNER consiste en una solución integral de telemetría, denominada TAU, que permite monitorear en tiempo real a través de una plataforma interactiva, el estado y evolución de las variables influyentes en el éxito de la producción rural.</p>
+				<p id='tooltip-caracteristicas'>Nuestras caracter&iacute;sticas competitivas son: Informaci&oacute;n, Innovaci&oacute;n, Versatilidad, Rentabilidad, Autonom&iacute;a, Conectividad y Dise&ntilde;o</p>
+				<p id='tooltip-beneficios'>Nuestros Beneficios: Informaci&oacute;n en Tiempo Real, Evoluci&oacute;n Hist&oacute;rica y Estad&iacute;stica, Previsi&oacute;n de Riesgos, Maximizaci&oacute;n de Rendimientos, Certeza en las Decisiones y Monitoreo de Eventos Cr&iacute;ticos</p>
+				<p id='tooltip-informacion'>Con Nuestros Servicios Usted podr&aacute;: Determinar la acumulaci&oacute;n energ&iacute;a necesaria para los cambios de ciclos de las plantas. Alertar sobre condiciones favorables para pat&oacute;genos que afectan a las plantas. Predicci&oacute;n de temperaturas m&iacute;nimas y heladas. Evaluar necesidades h&iacute;dricas de la planta y Controlar evoluci&oacute;n de enfermedades. Evitar dispersi&oacute;n de plagas. Optimizar pulverizaciones. Optimizar el momento de siembra. Fertilizar en el momento oportuno. Evaluar el desarrollo de enfermedades. Evaluar coeficiente Q. Determinar energ&iacute;a acumulada por el cultivo. Cambios repentinos de clima. Alerta temprana de enfermedades. Optimizaci&oacute;n de la cosecha o pulverizaci&oacute;n. Optimizar el momento de siembra. Evaluar stress h&iacute;drico. Optimizar riego asistido. Determinar la necesidad de agua del cultivo. Informaci&oacute;n de temperatura acumulada necesaria para llevar un proceso fisiol&oacute;gico. Permite programar acciones en la producci&oacute;n frutal. Alerta por falta de agua. Evitar el estr&eacute;s t&eacute;rmico de los animales. </p>
+
+			</div>
+		</div>
+		<script type="text/javascript">
+		(function(){
+			window._EP   = "https://www.manycontacts.com";
+			window.__bID = "5218d93a8c8405814b7385c2";
+			document.body.appendChild(
+				document.createElement("script")
+			).src = window._EP + "/assets/js/manycontacts.min.js";
+		})();
+		</script>
+	</body>
+</html>

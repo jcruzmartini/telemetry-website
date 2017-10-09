@@ -1,0 +1,17 @@
+<script>if ( typeof Auth == 'undefined') {window.location.href = './monitor.htm';}</script>
+ 
+<div id="content" class="span11">
+	<h1>Consola de Configuraci&oacute;n</h1>
+	<div class="box-header">
+		<h2>
+			<i class="halflings-icon list"></i>
+			<span class="break"></span>
+			Ejecutar Acciones en el Servidor
+		</h2>
+	</div>
+	<div class="box-content">
+		Acci&oacute;n:<input type="text" id="admin-console-action" style="width:200px;" />
+		Password:<input type="password" id="admin-console-password" style="width:200px;" />
+		<button onclick="AdminConsole.ExecuteInsert()" class="btn btn-small"><i class="halflings-icon ok"></i> Ejecutar</button>
+	</div>
+</div>

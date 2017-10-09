@@ -1,0 +1,70 @@
+<script>if ( typeof Auth == 'undefined') {window.location.href = './monitor.htm';}</script>
+<div id="content" class="span11">
+	<h1>Evoluci&oacute;n de Variables</h1>
+	<div class="container" style="width:100%;min-height:500px">
+		<ul id="tab" class="nav nav-tabs">
+			<li class="active"><a href="#dTabDiv" data-toggle="tab" id="informediario">Informe x Hora</a></li>
+			<li><a href="#sTabDiv" data-toggle="tab">Informe x Día</a></li>
+			<li><a href="#mTabDiv" data-toggle="tab">Informe Mensual</a></li>
+			<li><a href="#aTabDiv" data-toggle="tab">Informe Anual</a></li>
+		</ul>
+		<div id="tab-content-id" class="tab-content">
+			<div class="tab-pane fade" id="dTabDiv">
+				<div id="dDiv" style="width:80%;"></div>
+				<table class="table-responsive">
+					<tr>
+						<td>
+							Fecha Desde:
+							<input class="span2" data-date-format="dd/MM/yyyy" type='text' id="evolution-fdesde1" style="width:150px;height:15px;" />
+						</td>
+						<td>
+							Fecha Hasta:
+							<input class="span2" data-date-format="dd/MM/yyyy" type='text'id="evolution-fhasta1" style="width:150px;height:15px;" />
+						</td>
+						<td align="right">
+				            <button type="button" class="btn btn-success" style="margin-top: -10px;" id="evolution-button-1" onclick="Evolution.FilterByDay()">
+				            	Filtrar
+				            </button>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<div id="dTable" style="width:100%;display: table;margin: 0 auto;"></div>
+			</div>
+			<div class="tab-pane fade" id="sTabDiv">
+				<div id="sDiv" style="width:80%;"></div>
+				<table class="table-responsive">
+					<tr>
+						<td>
+							Fecha Desde:
+							<input class="span2" data-date-format="dd/MM/yyyy" type='text' id="evolution-fdesde2" style="width:150px;height:15px;"/>
+						</td>
+						<td>
+							Fecha Hasta:
+							<input class="span2" data-date-format="dd/MM/yyyy" type='text'id="evolution-fhasta2" style="width:150px;height:15px;" />
+						</td>
+						<td align="right">
+				            <button type="button" class="btn btn-success"  style="margin-top: -10px;" id="evolution-button-2" onclick="Evolution.FilterByWeek()">
+				            	Filtrar
+				            </button>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<div id="sTable" style="width:100%;display: table;margin: 0 auto;"></div>
+			</div>
+			<div class="tab-pane fade" id="mTabDiv">
+				<div id="mDiv" style="width:80%;"></div>
+				<br />
+				<div id="mTable" style="width:100%;display: table;margin: 0 auto;"></div>
+			</div>
+			<div class="tab-pane fade" id="aTabDiv">
+				<div id="aDiv" style="width:80%;"></div>
+
+				<br />
+				<div id="aTable" style="width:100%;display: table;margin: 0 auto;"></div>
+			</div>
+		</div>
+
+	</div>
+</div>

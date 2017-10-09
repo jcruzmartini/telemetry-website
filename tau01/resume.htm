@@ -1,0 +1,166 @@
+<script>if ( typeof Auth == 'undefined') {window.location.href = './monitor.htm';}</script>
+<style>
+	html { font-size: 62.5%; }
+	body { font-size: 1em;}
+
+	@media (max-width: 300px) {
+	    html { font-size: 27%; }
+	    hr { font-size: 27%; }
+	}
+
+	@media (min-width: 500px) {
+	    html { font-size: 60%; }
+	    hr { font-size: 60%; }
+	}
+
+	@media (min-width: 700px) {
+	    html { font-size: 45%; }
+	    hr { font-size: 45%; }
+	}
+
+	@media (min-width: 1200px) {
+	    html { font-size: 75%; }
+	    hr { font-size: 75%; }
+	}
+</style>
+<div id="content" class="span11">
+	<h1>Tablero de Control</h1>
+	<div id="tempStats-div" class="tempStats"></div>
+	<div class="row-fluid hideInIE8">
+		<div class="box span12">
+			<div class="box-header">
+				<h2>
+					<i class="halflings-icon tasks"></i>
+					<span class="break"></span>
+					Informaci&oacute;n del D&iacute;a de Hoy
+				</h2>
+				<div class="box-icon">
+					<h2 style='font-size:75%'>
+						&Uacute;ltima Actualizaci&oacute;n: <span id="utlact-min-div"></span>
+						<a href="#test_modal" id="btn-actualizar-inicio" data-loading-text="Cargando.." data-toggle="modal">
+						<i class="halflings-icon refresh"></i>
+						</a>
+					</h2>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="circleStats" id="circleStats-div" style="width:100%" width="100%">
+					<table class="table-responsive" width="100%" style="width:100%" >
+						<tr>
+							<td width="60%" style="width:65%;"><div id="circles-div"></div></td>
+							<td style='vertical-align:top;'>&nbsp;</td>
+							<td width='35%' style='vertical-align:top;text-align: right;width:30%;'>
+								<div id="additional-table">
+									<table class='table table-bordered table-striped table-condensed table-responsive' id='variables-table' width='120%' style='width:120%;'>
+										<thead><tr><th colspan="2">M&aacute;s Informaci&oacute;n</th></thead>
+										<tbody>
+											<tr>
+												<td rowspan="3">
+													<img src="./img/sensors/precipitacion.png" width="30px" style="width:30px;">
+													<strong>Precipitaciones</strong>
+												</td>
+												<td width="50%">
+													<strong>Diarias: &nbsp;</strong><br/>
+													<span id="precip-actual"></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Acum. 24hs: &nbsp;</strong><br/>
+													<span id="precip-acum_24"></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Ult. Semana: &nbsp;</strong><br/>
+													<span id="precip-acum_week"></span>
+												</td>
+											</tr>
+
+											<tr id='tempmin-tr' title='La Temperatura M&iacute;nima es un pron&oacute;stico de temperatura para ma&ntilde;ana. La misma se calcula 2 hs antes del atardecer'>
+												<td colspan="2">
+													<img src="./img/sensors/grados-frio.png" width="30px" style="width:30px;">
+													<strong>Temp. M&iacute;nima: &nbsp;</strong>
+													<span id="tempmin-span"></span>
+												</td>
+											</tr>
+											<tr>
+											<td rowspan="2">
+													<img src="./img/sensors/evapotranspiracion.png" width="30px" style="width:30px;">
+													<strong>Evapotranspiración</strong>
+												</td>
+												<td width="50%">
+													<strong>Acum. 24hs: &nbsp;</strong><br/>
+													<span id="acum_24"></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Acum. Semana: &nbsp;</strong><br/>
+													<span id="acum_week"></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--/span-->
+			</div>
+			<div class="row-fluid hideInIE8"  style="width:100%">
+				<div class="box span12">
+					<div class="box-header">
+						<h2>
+							<i class="halflings-icon tasks"></i>
+							<span class="break"></span>
+							&Uacute;ltimas 12 horas
+						</h2>
+						<div class="box-icon">
+							<h2 style='font-size:75%'>
+								<span id="tabla-diaria-export"></span>
+							</h2>
+						</div>
+					</div>
+					<div class="box-content">
+						<div id="tabla-diaria-div"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid hideInIE8"  style="width:100%" id="tabla-resumen-container">
+				<div class="box span12">
+					<div class="box-header">
+						<h2>
+							<i class="halflings-icon tasks"></i>
+							<span class="break"></span>
+							Cuadro Resumen
+						</h2>
+						<div class="box-icon">
+							<h2 style='font-size:75%'>
+								<span id="tabla-resumen-export"></span>
+							</h2>
+						</div>
+					</div>
+					<div class="box-content">
+						<div id="tabla-resumen-div"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/row-->
+		<div class="modal fade" id="test_modal">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">&times;</a>
+				<h3>Advertencia</h3>
+			</div>
+			<div class="modal-body">
+				<p>Desea actualizar los datos?<br />Se comunicar&aacute; con la estaci&oacute;n, y en minutos se tendr&aacute;n los valores actualizados.</p>
+			</div>
+			<div class="modal-footer">
+				<a id="btn-actualizar" class="btn btn-success" style="width:100px;">Confirmar</a>
+				<a class="btn btn-success"  data-dismiss="modal" style="width:100px;">Cancelar</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,2 @@
+[03-Dec-2013 10:37:55 America/Chicago] PHP Fatal error:  Call to undefined function phpinclude() in /home/synergos/public_html/techner/techner.com.ar/mail/sendmail-toolbox.php on line 1
+[03-Dec-2013 10:37:57 America/Chicago] PHP Fatal error:  Call to undefined function phpinclude() in /home/synergos/public_html/techner/techner.com.ar/mail/sendmail-toolbox.php on line 1

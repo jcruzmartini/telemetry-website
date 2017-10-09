@@ -1,0 +1,218 @@
+<script>if ( typeof Auth == 'undefined') {window.location.href = './monitor.htm';}</script>
+
+<div id="content" class="span11">
+	<h1>Toma de Decisiones</h1>
+	<div class="row-fluid hideInIE8">
+		<div class="box span12">
+			<div class="box-header">
+				<h2>
+					<i class="halflings-icon tasks"></i>
+					<span class="break"></span>
+					Toma de Decisiones
+				</h2>
+			</div>
+			<div class="box-content">
+				<div>
+					<div style='display: inline-block;width:50%'>
+						<div class="row-fluid hideInIE8">
+							<div class="box span12">
+								<div class="box-header">
+									<h2>
+										<i class="halflings-icon star"></i>
+										<span class="break"></span>
+										Informe de Grados D&iacute;a
+									</h2>
+								</div>
+								<div class="box-content">
+									<table class="table-responsive">
+										<tr>
+											<td>
+												Fecha Desde:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="igd-fde-div" value="01/01/2013" style="width:150px;height:15px;"/>
+											</td>
+											<td>
+												Fecha Hasta:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="igd-fha-div" style="width:150px;height:15px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Temp. Base: &nbsp;
+												<input class="span2" type="text" id="igd-ref-div" style="width:150px;height:15px;" value="10" />
+											</td>
+											<td align="right">
+                                                <button type="button" class="btn btn-success informe-tdd" id='igd' onclick="Decisions.GenerateTdDReport('igd')">Consultar</button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="label label-success" style="width:100%;visibility:hidden;" id="igd-result"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style='display: inline-block;width:50%'>
+						<div class="row-fluid hideInIE8">
+							<div class="box span12">
+								<div class="box-header">
+									<h2>
+										<i class="halflings-icon star"></i>
+										<span class="break"></span>
+										Informe de Horas Frio
+									</h2>
+								</div>
+								<div class="box-content">
+									<table class="table-responsive">
+										<tr>
+											<td>
+												Fecha Desde:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="ihf-fde-div" style="width:150px;height:15px;" value="01/01/2013" />
+											</td>
+											<td>
+												Fecha Hasta:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text'id="ihf-fha-div" style="width:150px;height:15px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Temp. Base:&nbsp;&nbsp;
+												<input class="span2" type="text" id="ihf-ref-div" style="width:150px;height:15px;" value="7" />
+											</td>
+											<td align="right">
+                                                <button type="button" class="btn btn-success informe-tdd" id='ihf' onclick="Decisions.GenerateTdDReport('ihf')">Consultar</button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="label label-success" style="width:100%;visibility:hidden;" id="ihf-result"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style='display: inline-block;width:50%'>
+						<div class="row-fluid hideInIE8">
+							<div class="box span12">
+								<div class="box-header">
+									<h2>
+										<i class="halflings-icon star"></i>
+										<span class="break"></span>
+										Informe de Horas Luz
+									</h2>
+								</div>
+								<div class="box-content">
+									<table class="table-responsive">
+										<tr>
+											<td>
+												Fecha Desde:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="ihl-fde-div" style="width:150px;height:15px;" value="01/01/2013" />
+											</td>
+											<td>
+												Fecha Hasta:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="ihl-fha-div" style="width:150px;height:15px;" />
+											</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td align="right">
+                                                <button id='ihl' type="button" class="btn btn-success informe-tdd" onclick="Decisions.GenerateTdDReport('ihl')">Consultar</button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="label label-success" style="width:100%;visibility:hidden;" id="ihl-result"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style='display: inline-block;width:50%'>
+						<div class="row-fluid hideInIE8">
+							<div class="box span12">
+								<div class="box-header">
+									<h2>
+										<i class="halflings-icon star"></i>
+										<span class="break"></span>
+										Informe de Lluvia Acumulada
+									</h2>
+								</div>
+								<div class="box-content">
+									<table class="table-responsive">
+										<tr>
+											<td>
+												Fecha Desde:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="ila-fde-div" style="width:150px;height:12px;"  value="01/01/2013" />
+											</td>
+											<td>
+												Fecha Hasta:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="ila-fha-div" style="width:150px;height:12px;" />
+											</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td align="right">
+                                                <button id='ila' type="button" class="btn btn-success informe-tdd" onclick="Decisions.GenerateTdDReport('ila')">Consultar</button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="label label-success" style="width:100%;visibility:hidden;" id="ila-result"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style='display: inline-block;width:50%'>
+						<div class="row-fluid hideInIE8">
+							<div class="box span12">
+								<div class="box-header">
+									<h2>
+										<i class="halflings-icon star"></i>
+										<span class="break"></span>
+										Informe de Evapotranspiración
+									</h2>
+								</div>
+								<div class="box-content">
+									<table class="table-responsive">
+										<tr>
+											<td>
+												Fecha Desde:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="iev-fde-div" style="width:150px;height:12px;"  value="01/01/2013" />
+											</td>
+											<td>
+												Fecha Hasta:
+												<input class="span2" data-date-format="dd/mm/yyyy" type='text' id="iev-fha-div" style="width:150px;height:12px;" />
+											</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td align="right">
+                                                <button id='ila' type="button" class="btn btn-success informe-tdd" onclick="Decisions.GenerateTdDReport('iev')">Consultar</button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="label label-success" style="width:100%;visibility:hidden;" id="iev-result"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

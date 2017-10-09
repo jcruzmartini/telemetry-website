@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<title>Como contactarse con Techner?</title>
+		<meta name="description" content="Tomando decisiones en base a informaci&oacute;n precisa y confiable. Contactenos." />
+		<meta name="keywords" content="techner, agro, tecnologia, tau, tau01, meteorologia, estacion meteorologica, tau, estacion telemetrica, tau aplicada" />
+		<meta name="author" content="carlosfontana" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Language" content="es" />
+		<meta name="copyright" content="carlosfontana" />
+		<meta name="Reply-to" content="carlosfontana@techner.com.ar" />
+		<meta name="generator" content="HTML" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5, IE=8, IE=9, IE=10" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<style type="text/css">
+			#effect { width: 40%; height: 60%; padding: 0.4em; margin-left: 50px; margin-right: auto; margin-top: 50px; }
+			#effect2 {position:absolute; width: 300px; height: 600px; top:10px;right:10px; }
+			#effect3 {position:absolute; width: 300px; height: 600px; top:10px;right:320px;}
+		</style>
+		<link rel="shortcut icon" href="http://tau01.com/img/favicon.bmp" />
+		<script type="text/javascript">
+			$(function() {
+				$(window).resize(function(){
+					var ww = $(window).width();
+					var wh = $(window).height();
+					if (ww < 950) {
+						$('#effect3').hide();
+						$('#effect2').hide();	
+
+						$('#effect').css('width','90%');
+						$('#effect').css('margin-left','10px');
+						$('#effect').css('margin-top','10px');
+					} else if (ww < 1200) {
+						$('#effect3').hide(); 
+						$('#effect').css('width','60%');
+					} else {
+						$('#effect3').show();
+						$('#effect2').show();	
+						$('#effect').css('width','40%');
+						$('#effect').css('margin-left','50px');
+						$('#effect').css('margin-top','50px');
+					}
+					if(wh < 610){
+						$('#footer').hide();
+						$('.upperreturn').show();
+					}else {
+						$('#footer').show();
+						$('.upperreturn').hide();
+					}
+					if (ww < 330){
+						$('.upperreturn').hide();
+					}
+				});
+				$(window).trigger('resize');
+			});	
+		</script>
+	</head>
+	<body>
+		<div align="center"><img src="/images/bg.jpg" class="bg"></div>
+
+		<div>
+			<a href="/" class="transition">
+				<img src="/images/title.png" class="logo" alt="Techner"/>
+			</a>
+			<span class='upperreturn'>
+					<a href="/" class="transition">regresar</a>
+			</span>
+			<div class="content">
+				<div id="effect" class="window">
+					<div class="window_head"><h1>Cont&aacute;ctenos</h1></div>
+					<p>
+						Nos encontramos en la ciudad de 
+						<a style="color: #fff;" href="http://goo.gl/maps/n7wPL" target="_blank">Rosario (Santa Fe)</a>, y 
+						<a style="color: #fff;" href="http://goo.gl/maps/W7iSZ" target="_blank">Marcos Juarez (C&oacute;rdoba)</a>.
+						<br /><br />Para contactarnos puede completar siguiente formulario:
+					</p>
+					<table width="100%" border="0">
+						<tr>
+							<td  style="width:20%">
+								<p>&nbsp;Nombre:</p>
+							</td>
+							<td  style="width:30%;">
+								<input type="text" name="contact-name" id="contact-name" style="width:100%;font-size:12px;font-family:'Trebuchet MS', 'Myriad Pro', sans-serif;background: rgba(255,255,255, 0.7);" />
+							</td>
+							<td  style="width:20%;">
+								<p>&nbsp;&nbsp;Email:</p>
+							</td>
+							<td  style="width:30%;" >
+								<input type="text" name="contact-email" id="contact-mail" style="width:100%;font-size:12px;font-family:'Trebuchet MS', 'Myriad Pro', sans-serif;background: rgba(255,255,255, 0.7);" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>&nbsp;Mensaje:</p>
+							</td>
+							<td colspan="3">
+								<textarea name="contact-message" id="contact-message" rows="3" cols="5" style="width:100%;height: 5em; resize: none;font-size:12px;font-family:'Trebuchet MS', 'Myriad Pro', sans-serif;background: rgba(255,255,255, 0.7);border: 1px #fff;"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<span>&nbsp;</span>
+								<span id="loginform-error" style="width:100%;color:#f00;">Por favor, revise los datos ingresados</span>
+								<span id="loginform-send" style="width:100%;color:#0f0;">Se ha enviado la consulta</span>
+							</td>
+							<td style="text-align:right;"><button id="contact-submit">Enviar</button></td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<p>
+									Escr&iacute;banos a info@techner.com.ar o cont&aacute;ctese telef&oacute;nicamente a +54 0341 153-091570.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="effect2" class="window">
+					<a class="twitter-timeline" href="https://twitter.com/TechnerAR" data-widget-id="339767360451911680">Tweets por @TechnerAR</a>
+					<script type="text/javascript">
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div>
+				<div id="effect3" class="window">
+					<div id="fb-root"></div>
+					<script type="text/javascript">(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+							js = d.createElement(s); js.id = id;
+							js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=238706946157476";
+							fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-like-box" data-href="http://www.facebook.com/pages/Techner-Argentina/379912165440176" data-width="295" data-show-faces="true" data-colorscheme="dark" data-stream="true" data-show-border="false" data-header="false"></div>
+				</div>
+			</div>
+			<div id='footer'>
+				<span class="reference">
+					<a href="" class="transition">Techner @Argentina</a>
+					<a href="http://tau01.com/" class="transition">Servicio TAU 01</a>
+				</span>
+				<span class="return">
+					<a href="/" class="transition">regresar</a>
+				</span>
+				<span class="social">
+					<a>S&iacute;guenos en:&nbsp;</a>
+					<a href="http://www.linkedin.com/company/2796779?trk=tyah" target="_blank">
+						<img src="/images/socialmedia-l.png" alt="Techner Linkedin" />
+					</a>
+					<a href="http://www.facebook.com/pages/Techner-Argentina/379912165440176" target="_blank">
+						<img src="/images/socialmedia-f.png" alt="Techner Facebook" />
+					</a>
+					<a href="https://twitter.com/@technerAR" target="_blank">
+						<img src="/images/socialmedia-t.png" alt="Techner Twitter" />
+					</a>
+					<a href="http://gplus.to/TechnerArgentina" target="_blank">
+						<img src="/images/socialmedia-gp.png" alt="Techner Google+" />
+					</a>
+				</span>
+			</div>
+		</div>
+	</body>
+
+</html>

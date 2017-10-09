@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://tau01.com/</loc>
+  <lastmod>2013-10-03T23:29:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://tau01.com/forecast.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/historical.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/monitor.htm</loc>
+  <lastmod>2013-10-03T04:31:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/notifications.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/profile.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/resume.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/services.htm</loc>
+  <lastmod>2013-10-03T04:31:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/small.htm</loc>
+  <lastmod>2013-10-03T04:31:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/admin-configuration.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/admin-console.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/alarms.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/decisions.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/economics.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tau01.com/evolution.htm</loc>
+  <lastmod>2013-10-03T23:47:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>

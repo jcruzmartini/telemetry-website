@@ -1,0 +1,41 @@
+<script>if ( typeof Auth == 'undefined') {window.location.href = './monitor.htm';}</script>
+<div id="content" class="span11" style='height:100%;'>
+	<h1>Informaci&oacute;n Hist&oacute;rica</h1>
+	<div class="box-header">
+		<h2>
+			<i class="fa-icon-hdd"></i>
+			<span class="break"></span>
+			Informaci&oacute;n Hist&oacute;rica
+		</h2>
+	</div>
+	<div class="box-content" style='height: 100%;'>
+		<p> Seleccione las variables de su interes, y el rango de fechas.
+		<div class="control-group">
+			<table style='width:100%' class="table-responsive">
+				<tr>
+					<td style='width:10%'>Variables</td>
+					<td colspan='3'>
+						<select id="selectVariable" multiple data-rel="chosen" style="width:400px;"></select>
+					</td>
+					<td>
+						<button class="btn btn-success" type="button" id='consultar-historicos'>Consultar</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Fecha Desde</td>
+					<td><input class="span2" data-date-format="dd/mm/yyyy" type='text' id="fechadesde" value="01/01/2013" style="width:100px;"/></td>
+					<td style='width:10%'>Fecha Hasta</td>
+					<td><input class="span2" data-date-format="dd/mm/yyyy" type='text' id="fechahasta" style="width:100px;" /></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td colspan='3'>
+						<span id="historical-error" style="width:65%" class="label label-important">Por favor, revise los datos ingresados</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id='historical-results'></div>
+	</div>
+	<div style='height:450px' id='historical-footer'></div>
+</div>

@@ -1,0 +1,36 @@
+			
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>carlitos es vaguito y tiene el pito cortito</title>
+
+</head>
+
+
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = 'http://api.met.no/weatherapi/locationforecastlts/1.1/?lat=-32.869207;lon=-60.58902';
+			$.ajax({
+				type: 'GET', url: url,
+                		dataType: "xml",
+				success: function (xml){
+					var forecast = $.xml2json(xml); 
+					document.write(JSON.stringify(forecast));
+				},
+				 error: function (request, status, error) {
+					console.log(request.responseText + " " + status + " " + error);
+				},
+				failure: function (errMsg) {
+					console.log(errMsg);
+				}
+			});
+});
+    </script>
+</body>
+
+</html>
+
+
